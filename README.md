@@ -1,7 +1,7 @@
 # TECH USED
 
-##Laravel
-##ReactJS
+## Laravel
+## ReactJS
 
 Instructions on how to run:
 1. Download files 
