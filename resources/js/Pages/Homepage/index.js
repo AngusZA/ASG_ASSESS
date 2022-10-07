@@ -8,7 +8,6 @@ import useFetch from '../../hooks/useFetch';
 const Homepage = () => {
     const currencyInfo = useFetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.min.json',{Accept:'application/json'});
     const currentExchangeRates = useFetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/zar.min.json',{Accept:'application/json'});
-    console.log(currentExchangeRates);
 
     const [selectedCurrencies, setSelectedCurrencies] = useState(loadJSON('selectedCurrencies')?loadJSON('selectedCurrencies'):[] );
 
