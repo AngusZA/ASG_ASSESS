@@ -10,7 +10,6 @@ import numberToCurrency from '../../hooks/numberToCurrency';
 
 const TableItemRow = (props) => {
     const {currencyItem,onRemove} = props;
-    console.log(currencyItem);
     const {data,error,loading} = useFetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currencyItem[0]}/zar.json`,{Accept:'application/json'});
     return (
         <>
